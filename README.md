@@ -21,7 +21,17 @@ Configurer la connexion à la base de données dans le fichier .env (voir cours)
 ```
 symfony console doctrine:datebase:create
 symfony console doctrine:migration:migrate
+symfony console doctrine:fixtures:load
 ```
+### Création des fixtures 
+```
+symfony console doctrine:fixtures:load
+```
+
+Cette commande créera : 
+* Un compte admin (email: a@a.a , password : 'aaaaaaaaA7/')
+* 10 compte utilisateurs (email aléatoire , password : 'aaaaaaaaA7/')
+* 50 articles
 
 ### Lancer le serveur
 ```
